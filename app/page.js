@@ -10,9 +10,14 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
-      <h1>Weeeee WOOOOOO</h1>
-      <p className="testp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eius, eos quasi labore dignissimos dolorum perspiciatis in id ea earum cumque, aliquam harum, voluptate voluptates fugit maiores? Qui, sint fugit quod, voluptates voluptas temporibus minus sit commodi corrupti earum architecto!</p>
-      <Link href="/projects">test</Link>
+      
+      <section className={styles.heroSection}>
+        <h1 className={styles.heroHeader}>Hello world, I'm Nate.</h1>
+        <p className={styles.heroText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quo?</p>
+        <Link href={'/projects'} className={styles.heroLink}>Check out my works</Link>
+        <Link href={'/resume'} className={styles.heroLink}>See my resume</Link>
+      </section>
+        
     </main>
   );
 }

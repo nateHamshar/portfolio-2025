@@ -1,0 +1,34 @@
+/*
+   Color Palette 
+    --gray-text: #d0d6d6;
+    --teal-accent: #86b9b0;
+    --midtone: #4c7173;
+    --dark-green: #042630;
+    --darkest: #041421;
+
+   Fonts
+    --header: "Exo 2", sans-serif;
+    --standard-text: "Alegreya Sans", sans-serif;
+
+*/
+
+.heroSection{
+    border: 1px solid red;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroHeader{
+    color: var(--midtone);
+    font-family: var(--header);
+    font-weight: 600;
+}
+.heroText{
+    color: var(--gray-text);
+    font-family: var(--standard-text);
+}
+.heroLink{
+
+}

@@ -1,0 +1,18 @@
+.nav{
+    background-color: var(--darkest) !important;   
+}
+
+.nav-text{
+    color: var(--gray-text);
+    font-family: var(--header);
+}
+
+.active-page{
+    color: var(--teal-accent);
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+.active-page:hover{
+    cursor:default;
+    color: var(--teal-accent)
+}
