@@ -35,11 +35,13 @@ const NavbarComponent = () => {
   },[pathname])
 
 
+
+
   return (
     <>
-      <Navbar expand="sm" bg="dark" data-bs-theme="dark" className='nav'>
+      <Navbar expand="sm" bg="light" data-bs-theme="light" className='nav-transparent navbar-fixed-top'>
         <Container>
-          <Navbar.Brand href="/" className='nav-text active-page' id="home" onClick={() => setHomeActive()}>William Hamshar</Navbar.Brand>
+          <Navbar.Brand href="/" className='active-page nav-name' id="home" onClick={() => setHomeActive()}>Nate Hamshar</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

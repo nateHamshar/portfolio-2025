@@ -1,18 +1,27 @@
-.nav{
+.nav-dark{
     background-color: var(--darkest) !important;   
 }
-
-.nav-text{
-    color: var(--gray-text);
+.nav-transparent{
+    background-color: transparent !important;
+}
+.nav-name{
+    color: var(--midtone);
     font-family: var(--header);
+    font-weight: 800;
+    letter-spacing: 2px;    
+}
+.nav-text{
+    color: var(--midtone);
+    font-family: var(--header);
+    font-weight: 600;
+    letter-spacing: 4px;
 }
 
 .active-page{
-    color: var(--teal-accent);
+    color: var(--darkest);
     text-decoration: underline 2px;
     text-underline-offset: 8px;
 }
 .active-page:hover{
-    cursor:default;
-    color: var(--teal-accent)
+    color: var(--accent)
 }
