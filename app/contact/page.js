@@ -9,7 +9,7 @@ const Contact = () => {
     return (
         <main>
             <NavbarComponent />
-            <h1>this is contact page</h1>
+            <h1>pretend this page is done</h1>
         </main>
     );
 }

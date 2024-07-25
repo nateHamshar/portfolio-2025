@@ -4,45 +4,43 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../globals.css'
 import "./navbar.css"
-import { useEffect } from 'react';
-import { useParams, usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import Image from 'next/image'
 
 const NavbarComponent = () => {
 
-  const pathname = usePathname();
-
-  useEffect(() => { // set accent color to active page tab
-    if (pathname == "/"){
-        document.getElementById("projects").classList.remove("active-page");
-        document.getElementById("resume").classList.remove("active-page");
-        document.getElementById("contact").classList.remove("active-page");
-    } else if (pathname == "/projects"){
-        document.getElementById("projects").classList.add("active-page");
-        document.getElementById("home").classList.remove("active-page");
-        document.getElementById("resume").classList.remove("active-page");
-        document.getElementById("contact").classList.remove("active-page");
-    } else if (pathname == '/resume'){
-        document.getElementById("resume").classList.add("active-page");
-        document.getElementById("projects").classList.remove("active-page");
-        document.getElementById("home").classList.remove("active-page");
-        document.getElementById("contact").classList.remove("active-page");
-    } else if (pathname == "/contact"){
-        document.getElementById("contact").classList.add("active-page");
-        document.getElementById("projects").classList.remove("active-page");
-        document.getElementById("resume").classList.remove("active-page");
-        document.getElementById("home").classList.remove("active-page");
-    }
-  },[pathname])
+  
 
 
+  const [theme, setTheme] = useState("light")
 
+  const makeNavDark = () => {
+    setTheme("dark")
+    document.querySelector(".nav-transparent").classList.add("nav-dark");
+    document.querySelector("#home").classList.add("dark-mode");
+    document.querySelector("#projects").classList.add("dark-mode");
+    document.querySelector("#resume").classList.add("dark-mode");
+    document.querySelector("#contact").classList.add("dark-mode");
+  }
+
+  document.addEventListener("scroll", () => {
+   makeNavDark() 
+  })
 
   return (
     <>
-      <Navbar expand="sm" bg="light" data-bs-theme="light" className='nav-transparent navbar-fixed-top'>
+      <Navbar expand="sm"  data-bs-theme={theme} className='nav-transparent fixed-top'>
         <Container>
-          <Navbar.Brand href="/" className='active-page nav-name' id="home" onClick={() => setHomeActive()}>Nate Hamshar</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Brand href="/" className='active-page nav-name' id="home" onClick={() => setHomeActive()}>
+            <Image 
+              src={"/portfolio-icon.png"}
+              height={50}
+              width={50}
+              alt="personal logo"
+              className='logo'
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => makeNavDark()}/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
                 <Nav.Link href="/projects" className='nav-text' id="projects" onClick={() => setProjectsActive()}>Projects</Nav.Link>

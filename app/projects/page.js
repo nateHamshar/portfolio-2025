@@ -9,7 +9,7 @@ const Projects = () => {
     return (
         <main>
             <NavbarComponent />
-            <h1>projects page</h1>
+            <h1>projects are hiding rn</h1>
         </main>
     );
 }

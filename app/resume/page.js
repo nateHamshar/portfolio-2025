@@ -10,7 +10,7 @@ const Resume = () => {
     return (
         <main>
             <NavbarComponent />
-            <h1>resume page</h1>
+            <h1>just look at the home page  </h1>
         </main>
         
     );
