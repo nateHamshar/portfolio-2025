@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 12rem;
-    padding-bottom: 18rem;
+    padding-bottom: 12rem;
 }
 
 .heroContent{
@@ -155,4 +155,10 @@
     line-height: 1.3rem;
     text-align: center;
     color: rgb(182, 182, 182);
+}
+
+
+
+.projectsSection{
+    margin-top: 10rem;
 }

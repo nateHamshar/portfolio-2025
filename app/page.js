@@ -3,7 +3,8 @@ import styles from "./page.module.css";
 import Link from 'next/link';
 import Navbar from './components/Navbar'
 import Image from 'next/image';
-
+import Project from "./components/Project"
+import "./components/project.css"
 export const metadata = {
   title: 'Home | W Hamshar',
 };
@@ -84,6 +85,18 @@ export default function Home() {
         </div>
 
         <div className={styles.bottomSlant}></div>
+      </section>
+
+
+      <section className={styles.projectsSection}>
+        <Project imgURL={'404-icon.png'} 
+            header={"Wahoo BBQ Restaurant"}
+            text={"This product was built for a new restaurant in my area. It is a Next app, utilizes multiple React Bootstrap components, and has animations powered by Framer Motion."}
+            source={"https://github.com/nateHamshar/wahoobbq"}
+            live={"https://wahoobbq.vercel.app"}
+          />
+
+
       </section>
 
     </main>
