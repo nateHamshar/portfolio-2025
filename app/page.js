@@ -15,7 +15,7 @@ export default function Home() {
       
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroHeader}>Hey, I'm <span className={styles.nameSpan}>Nate!</span></h1>
+          <h1 className={styles.heroHeader}>Hey, I&apos;m <span className={styles.nameSpan}>Nate!</span></h1>
           <p className={styles.heroText}>FULL-STACK DEVELOPER</p>
           <div className={styles.heroLinksDiv}>
             <Link href={'/projects'} className={styles.heroLink}>View Projects</Link>
@@ -51,7 +51,7 @@ export default function Home() {
                 alt="section icon"
               /></div>
             <h2 className={styles.blockHeader}>Front-End Skills</h2>
-            <p className={styles.blockText}>I consider front-end development to be my strongsuit, mainly in the TS/JS realm, and most of my experience is in React/Next. I've worked on multiple projects using some of the most common libraries including Bootstrap, Tailwind, SASS, Framer Motion, etc. I also have using the data visualization libraries D3 and Chart.js.</p>
+            <p className={styles.blockText}>I consider front-end development to be my strongsuit, mainly in the TS/JS realm, and most of my experience is in React/Next. I&apos;ve worked on multiple projects using some of the most common libraries including Bootstrap, Tailwind, SASS, Framer Motion, etc. I also have using the data visualization libraries D3 and Chart.js.</p>
           </div>
 
           <div className={styles.introBlock}>
@@ -64,7 +64,7 @@ export default function Home() {
               />
               </div>
             <h2 className={styles.blockHeader}>Back-End Skills</h2>
-            <p className={styles.blockText}>I'm most comfortable using Node.js and Express, and my preferred database combo is Mongo & Mongoose. However, I also have experience working with SQL and MySQL. Recently started using Python and Flask to build APIs.</p>
+            <p className={styles.blockText}>I&apos;m most comfortable using Node.js and Express, and my preferred database combo is Mongo & Mongoose. However, I also have experience working with SQL and MySQL. Recently started using Python and Flask to build APIs.</p>
             
           </div>
 
@@ -78,7 +78,7 @@ export default function Home() {
               />
             </div>
             <h2 className={styles.blockHeader}>My Toolkit</h2>
-            <p className={styles.blockText}>My preferred code editor is VS code, but when I'm writing in Java I use the EclipseIDE. I am very comfortable with Git and Github for version control. I have working knowledge of AWS, Docker, and Postman. </p>
+            <p className={styles.blockText}>My preferred code editor is VS code, but when I&apos;m writing in Java I use the EclipseIDE. I am very comfortable with Git and Github for version control. I have working knowledge of AWS, Docker, and Postman. </p>
           </div>
 
         </div>
