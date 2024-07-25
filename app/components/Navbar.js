@@ -23,10 +23,13 @@ const NavbarComponent = () => {
     document.querySelector("#contact").classList.add("dark-mode");
   }
 
-  document.addEventListener("scroll", () => {
-   makeNavDark() 
-  })
 
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+     makeNavDark() 
+    })
+  },[])
+  
   return (
     <>
       <Navbar expand="sm"  data-bs-theme={theme} className='nav-transparent fixed-top'>
