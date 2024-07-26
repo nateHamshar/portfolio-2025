@@ -1,4 +1,4 @@
-
+import "./components/project.css"
 import styles from "./page.module.css";
 import Link from 'next/link';
 import Navbar from './components/Navbar'
@@ -89,13 +89,40 @@ export default function Home() {
 
 
       <section className={styles.projectsSection}>
-        <Project imgURL={'404-icon.png'} 
-            header={"Wahoo BBQ Restaurant"}
+        <div className={styles.projectHeaderDiv}>
+          <h1 className={styles.projectHeader}>MY PROJECTS</h1>
+          <div className={styles.projectHeaderImage}>
+            <Image src='/project-management.png'
+              fill={true}
+              alt="lightbulb with gears"
+            />
+          </div>
+        </div>
+
+        <div className={styles.projectCard}>
+        <Project imgURL={'frenchpress.jpg'} 
+            header={"This is a cool project"}
             text={"This product was built for a new restaurant in my area. It is a Next app, utilizes multiple React Bootstrap components, and has animations powered by Framer Motion."}
             source={"https://github.com/nateHamshar/wahoobbq"}
             live={"https://wahoobbq.vercel.app"}
           />
-
+          </div>
+          <div className={styles.projectCard}>
+        <Project imgURL={'frenchpress.jpg'} 
+            header={"This is a cool project"}
+            text={"This product was built for a new restaurant in my area. It is a Next app, utilizes multiple React Bootstrap components, and has animations powered by Framer Motion."}
+            source={"https://github.com/nateHamshar/wahoobbq"}
+            live={"https://wahoobbq.vercel.app"}
+          />
+          </div>
+          <div className={styles.projectCard}>
+        <Project imgURL={'frenchpress.jpg'} 
+            header={"This is a cool project"}
+            text={"This product was built for a new restaurant in my area. It is a Next app, utilizes multiple React Bootstrap components, and has animations powered by Framer Motion."}
+            source={"https://github.com/nateHamshar/wahoobbq"}
+            live={"https://wahoobbq.vercel.app"}
+          />
+          </div>
 
       </section>
 

@@ -1,29 +1,46 @@
-.projectContainer{
 
-}
 .imageDiv{
-
+    position: relative;
+    width: 80vw;
+    height: calc((80vw * 9)/16);
 }
 .projectImage{
 
 }
 .content{
-
+    background-color: rgb(255, 255, 255);
+    padding: 4%;
+    border-top: 2px solid var(--accent);
 }
 .projectHeader{
-    color: red;
+    color: black;
+    font-family: var(--header);
+    font-size: 1.5rem;
 }
 .description{
-
+    font-family: var(--standard-text);
+    font-weight: 400;
 }
 .linksDiv{
-
+    display: flex;
+    margin-top: -2%;
 }
 .sourceLink{
-
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-family: var(--header);
+    font-weight: 600;
+    width: 35%;
+    text-align: center;
 }
 .liveLink{
-
-}
-.arrow{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    font-family: var(--header);
+    font-weight: 600;
+    margin-left: 4%;
+    width: 35%;
+    text-align: center;
 }

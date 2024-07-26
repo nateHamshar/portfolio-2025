@@ -161,4 +161,39 @@
 
 .projectsSection{
     margin-top: 10rem;
+    padding-bottom: 20rem;
 }
+
+.projectHeaderDiv{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.projectHeader{
+    font-family: var(--rounded);
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+    margin-right: 2%;
+    align-self: flex-end;
+}
+.projectHeaderImage{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 2%;
+
+
+}
+
+.projectCard{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(100, 100, 111, 0.253) 0px 7px 29px 0px;
+    margin-top: 4rem;
+    border-radius: 1%;
+    overflow: hidden;
+}
+
