@@ -12,6 +12,7 @@ const Project = ({imgURL, header, text, source, live, alt}) => {
                     className='projectImage'
                     fill={true}
                     alt={alt}
+                    loading='lazy'
                 />
             </div>
             <div className="content">
