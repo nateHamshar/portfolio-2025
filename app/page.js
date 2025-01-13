@@ -100,14 +100,14 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.projectCard}>
-        <Project imgURL={'personalizednews.JPG'} 
-            header={"Personalized News App"}
-            text={"This app requires its user to pick topics they enjoy, and then retrieves news articles that they may enjoy. It is built with Next.js, and is hosted on Vercel."}
-            source={"https://github.com/nateHamshar/personalized-news"}
-            live={"https://personalized-news.vercel.app"}
+        <Project imgURL={'cuppaJoe.JPG'} 
+            header={"Cuppa Joe Cafe"}
+            text={"Website for the coffee shop I work at. Built with Next, hosted on Vercel. Worked with a graphic designer and the business owner to bring the owner's vision to life!"}
+            source={"https://github.com/nateHamshar/cuppa-joe-cafe"}
+            live={"https://cuppajoecafe.vercel.app"}
           />
           </div>
-        <div className={styles.projectCard}>
+          <div className={styles.projectCard}>
         <Project imgURL={'wahoobbq.JPG'} 
             header={"Wahoo BBQ"}
             text={"This project is a revamp of a restaurants old website. Built with Next.js and hosted on Vercel. Uses multiple components from React Bootstrap and includes animations from Framer Motion."}
@@ -115,14 +115,16 @@ export default function Home() {
             live={"https://wahoobbq.vercel.app"}
           />
           </div>
-          <div className={styles.projectCard}>
-        <Project imgURL={'frenchpress.jpg'} 
-            header={"This is a cool project"}
-            text={"This product was built for a new restaurant in my area. It is a Next app, utilizes multiple React Bootstrap components, and has animations powered by Framer Motion."}
-            source={"https://github.com/nateHamshar/wahoobbq"}
-            live={"https://wahoobbq.vercel.app"}
+        <div className={styles.projectCard}>
+        <Project imgURL={'personalizednews.JPG'} 
+            header={"Personalized News App"}
+            text={"This app requires its user to pick topics they enjoy, and then retrieves news articles that they may enjoy. It is built with Next.js, and is hosted on Vercel."}
+            source={"https://github.com/nateHamshar/personalized-news"}
+            live={"https://personalized-news.vercel.app"}
           />
           </div>
+        
+          
       </section>
 
 
