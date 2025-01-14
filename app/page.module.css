@@ -211,7 +211,7 @@
 */
 
 .contactContent{
-    color: white;
+    color: rgb(182, 182, 182);
     background-color: rgba(0, 0, 0, 0.932);
     min-height: 20rem;
     padding: 5rem 0 5rem 0;
@@ -240,7 +240,7 @@
 }
 .contactLinkedIn, .contactEmail{
     padding-left: .75rem;
-    color: white;
+    color: rgb(182, 182, 182);;
     text-decoration: none;
     font-family: var(--standard-text);
     font-weight: 400;
