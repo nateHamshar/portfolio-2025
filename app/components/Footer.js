@@ -4,10 +4,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="infoDiv">
-                <h1 className="header">Let&apos;s get in touch!</h1>
-                <p className="name">William Hamshar</p>
-                <p className="email">williamhamshar@gmail.com</p>
-                <Link href={"https://www.linkedin.com/in/william-hamshar/"} target='_blank' className="linkedIn">LinkedIn -&gt;</Link>
+                
             </div>
             <div className="quickLinks">
                 <h1 className="quickLinksHeader">Quick Links</h1>

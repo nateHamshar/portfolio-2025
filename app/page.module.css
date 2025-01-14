@@ -47,7 +47,6 @@
     color: var(--accent);
     font-family: var(--rounded);
     font-size: 2.5rem;
-
 }
 .heroText{
     color: black;
@@ -159,6 +158,12 @@
 
 
 
+/* 
+
+    Projects Section 
+
+*/
+
 .projectsSection{
     margin-top: 10rem;
     padding-bottom: 20rem;
@@ -197,3 +202,53 @@
     overflow: hidden;
 }
 
+
+
+/*
+
+    Contact Section 
+    
+*/
+
+.contactContent{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.932);
+    min-height: 20rem;
+    padding: 5rem 0 5rem 0;
+}
+.contactHeader{
+    font-family: var(--header);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 2.25rem;
+    text-align: center;
+}
+.contactSpan{
+    color: var(--accent);
+    font-family: var(--rounded);
+    font-size: 2.5rem;
+}
+.contactItem{
+    display: flex;
+    align-items: flex-end;
+    width: 100vw;
+    padding-left: 2.25rem;
+    margin-top: .5rem;
+}
+.contactItem:first-of-type{
+    margin-top: 2rem;
+}
+.contactLinkedIn, .contactEmail{
+    padding-left: .75rem;
+    color: white;
+    text-decoration: none;
+    font-family: var(--standard-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.rotate45{
+    position: absolute;
+    padding-left: .25rem;
+    transform: rotate(-45deg);
+    color: var(--accent);
+}
