@@ -87,7 +87,7 @@ export default function Home() {
 
         <div className={styles.bottomSlant}></div>
       </section>
-      <section className={styles.projectsSection}>
+      <section className={styles.projectsSection} id="projectsSection">
         <div className={styles.projectHeaderDiv}>
           <h1 className={styles.projectHeader}>MY PROJECTS</h1>
           <div className={styles.projectHeaderImage}>
@@ -119,6 +119,22 @@ export default function Home() {
             text={"This app requires its user to pick topics they enjoy, and then retrieves news articles that they may enjoy. It is built with Next.js, and is hosted on Vercel."}
             source={"https://github.com/nateHamshar/personalized-news"}
             live={"https://personalized-news.vercel.app"}
+          />
+          </div>
+          <div className={styles.projectCard}>
+        <Project imgURL={'personalizednews.JPG'} 
+            header={"Loan Calculator"}
+            text={"This loan calculator provides payment information and a chart  It is built with Next.js and is hosted on Vercel."}
+            source={"https://github.com/nateHamshar/loan-calculator-app"}
+            live={"https://natehamshar.github.io/loan-calculator-app/"}
+          />
+          </div>
+          <div className={styles.projectCard}>
+        <Project imgURL={'personalizednews.JPG'} 
+            header={"Salon Website"}
+            text={"This website was built for a salon in my area that wanted to revamp their old Wordpress site. It is built using Next and is being hosted on Vercel."}
+            source={"https://github.com/nateHamshar/salon-deshano"}
+            live={"https://salondeshano.vercel.app/"}
           />
           </div>
         
