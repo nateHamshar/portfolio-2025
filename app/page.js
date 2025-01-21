@@ -5,7 +5,6 @@ import Navbar from './components/Navbar'
 import Image from 'next/image';
 import Project from "./components/Project"
 import "./components/project.css"
-import Footer from "./components/Footer.js";
 export const metadata = {
   title: 'Home | W Hamshar',
 };
@@ -20,7 +19,7 @@ export default function Home() {
           <h1 className={styles.heroHeader}>Hey, I&apos;m <span className={styles.nameSpan}>Nate!</span></h1>
           <p className={styles.heroText}>FULL-STACK DEVELOPER</p>
           <div className={styles.heroLinksDiv}>
-            <Link href={'/projects'} className={styles.heroLink}>View Projects</Link>
+            <Link href={'#projectsSection'} className={styles.heroLink}>View Projects</Link>
             <Link href={'/resume'} className={styles.heroLink}>My Resume</Link>
           </div>
         </div>
